@@ -1,0 +1,25 @@
+/* ---------------------------------------------------------------------
+ * PANEL XFCE 4.8 (Peppermint/Ubuntu 11.04) - estilo Haiku
+ *
+ * Selector confirmado por prueba con colores marcadores:
+ *   widget_class "*XfcePanelWindow*" style:highest "..."
+ * (con 'style' a secas NO aplica: el panel fija su propio estilo y hay que
+ *  ganarle con style:highest).
+ *
+ * LIMITACION MEDIDA: xthickness/ythickness pintan el fondo del panel pero
+ * NO separan los iconos de las orillas, porque xfce4-panel 4.8 empaqueta
+ * los plugins dentro del contenedor y no respeta el padding del tema para
+ * hijos ya empaquetados. Margen medido: 0 px con xthickness 12.
+ * Para separarlos de verdad hay que usar el tamano del panel (size) y
+ * el tamano de iconos de cada plugin; no hay opcion de margen en xfconf.
+ * ------------------------------------------------------------------- */
+
+style "haiku-panel-window"
+{
+    bg[NORMAL] = "#D8D8D8"
+    fg[NORMAL] = "#000000"
+    xthickness = 1
+    ythickness = 1
+}
+widget_class "*XfcePanelWindow*" style:highest "haiku-panel-window"
+class "XfcePanelWindow" style:highest "haiku-panel-window"

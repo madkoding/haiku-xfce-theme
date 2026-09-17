@@ -1,0 +1,51 @@
+########################################################################
+# Tema de notificaciones para xfce4-notifyd (Haiku)
+#
+# Ruta: ~/.themes/Haiku/xfce-notify-4.0/gtkrc
+# notifyd lee ESTE archivo (no el gtkrc principal) para pintar la ventana
+# de notificacion. El tema B00merang/Haiku original NO lo traia, por eso
+# las notificaciones heredaban el bg_pixmap estirado del panel y salian
+# con bandas horizontales y costuras.
+#
+# Estilo: plano, gris Haiku (#D8D8D8), borde sutil, esquinas redondeadas.
+########################################################################
+
+style "haiku-notify-window"
+{
+    bg[NORMAL] = "#D8D8D8"
+    fg[NORMAL] = "#000000"
+
+    # borde fino gris medio (como los paneles Haiku)
+    XfceNotifyWindow::border-color = "#909090"
+    XfceNotifyWindow::border-width = 1.0
+    XfceNotifyWindow::border-radius = 3.0
+}
+class "XfceNotifyWindow" style "haiku-notify-window"
+
+# boton de cerrar: mismo gris, resaltado al pasar el mouse
+style "haiku-notify-button"
+{
+    bg[NORMAL]   = "#D8D8D8"
+    bg[PRELIGHT] = "#EDEDED"
+    bg[ACTIVE]   = "#C0C0C0"
+    fg[NORMAL]   = "#000000"
+    fg[PRELIGHT] = "#000000"
+    fg[ACTIVE]   = "#000000"
+}
+widget_class "XfceNotifyWindow.*.GtkButton*" style "haiku-notify-button"
+
+# texto: titulo en negro, cuerpo en gris oscuro
+style "haiku-notify-title"
+{
+    fg[NORMAL] = "#000000"
+    font_name = "Exo 2 Bold 9"
+}
+widget_class "XfceNotifyWindow.*.GtkLabel.title" style "haiku-notify-title"
+
+style "haiku-notify-text"
+{
+    fg[NORMAL] = "#303030"
+    GtkWidget::link-color = "#1F6B78"
+    font_name = "Exo 2 8"
+}
+widget_class "XfceNotifyWindow.*.<GtkLabel>" style "haiku-notify-text"

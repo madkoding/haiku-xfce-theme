@@ -1,0 +1,29 @@
+gtk-color-scheme = "fg_color:#000000\nbg_color:#D8D8D8\nbase_color:#D8D8D8\ntext_color:#000000\nselected_bg_color:#B0B0B0\nselected_fg_color:#000000\ntooltip_bg_color:#D8D8D8\ntooltip_fg_color:#000000"
+
+style "default"
+{
+    font_name = "Exo 2 10"
+    fg[NORMAL]   = "#000000"
+    fg[ACTIVE]   = "#000000"
+    fg[PRELIGHT] = "#000000"
+    fg[SELECTED] = "#000000"
+    fg[INSENSITIVE] = "#000000"
+
+    bg[NORMAL]   = "#D8D8D8"
+    bg[ACTIVE]   = "#B0B0B0"
+    bg[PRELIGHT] = "#B0B0B0"
+    bg[SELECTED] = "#B0B0B0"
+    bg[INSENSITIVE] = "#D8D8D8"
+
+    base[NORMAL]   = "#D8D8D8"
+    base[ACTIVE]   = "#B0B0B0"
+    base[PRELIGHT] = "#B0B0B0"
+    base[SELECTED] = "#B0B0B0"
+
+    text[NORMAL]   = "#000000"
+    text[ACTIVE]   = "#000000"
+    text[SELECTED] = "#000000"
+    text[INSENSITIVE] = "#000000"
+}
+
+class "*" style "default"

@@ -1,0 +1,42 @@
+########################################################################
+# Iconos del escritorio: sin fondo (label-alpha 0) + texto blanco con
+# sombra negra. Propiedades reales de XfdesktopIconView (xfdesktop 4.8).
+########################################################################
+
+style "xfdesktop-icon-labels"
+{
+    # alpha del fondo de la etiqueta: 0 = sin fondo (se ve el wallpaper)
+    XfdesktopIconView::label-alpha = 0
+
+    # texto blanco
+    fg[NORMAL]     = "#FFFFFF"
+    fg[PRELIGHT]   = "#FFFFFF"
+    fg[ACTIVE]     = "#FFFFFF"
+    fg[SELECTED]   = "#FFFFFF"
+    text[NORMAL]   = "#FFFFFF"
+    text[SELECTED] = "#FFFFFF"
+
+    # sombra negra desplazada 1px: da legibilidad sobre cualquier fondo
+    XfdesktopIconView::shadow-color = "#000000"
+    XfdesktopIconView::shadow-x-offset = 1
+    XfdesktopIconView::shadow-y-offset = 1
+
+    # seleccionado: tambien sin fondo, sombra mas marcada
+    XfdesktopIconView::selected-label-alpha = 0
+    XfdesktopIconView::selected-shadow-color = "#000000"
+    XfdesktopIconView::selected-shadow-x-offset = 1
+    XfdesktopIconView::selected-shadow-y-offset = 1
+    base[SELECTED] = "#FFFFFF"
+}
+
+# el widget real del icon view
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-labels"
+widget_class "*Xfdesktop*Icon*" style "xfdesktop-icon-labels"
+class "XfdesktopIconView" style "xfdesktop-icon-labels"
+
+# el contenedor del escritorio (por si el estilo se hereda desde arriba)
+style "xfdesktop-desktop"
+{
+    bg[NORMAL] = "#000000"
+    fg[NORMAL] = "#FFFFFF"
+}
