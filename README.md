@@ -15,7 +15,7 @@ Tema completo Haiku/cyberpunk para XFCE 4.x, xfwm4, GTK2/GTK3, notificaciones, p
 
 | Escritorio limpio | Decoraciones de ventana | Sin conky |
 |---|---|---|
-| ![desktop](screenshots/desktop-clean.png) | ![windows](screenshots/window-decorations.png) | ![no conky](screenshots/desktop-no-conky.png) |
+| ![desktop](screenshots/screenshots/haiku-xfce-desktop-1366x800.png) | ![windows](screenshots/window-decorations.png) | ![no conky](screenshots/desktop-no-conky.png) |
 
 ## Instalación
 
