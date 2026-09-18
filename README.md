@@ -13,9 +13,10 @@ Tema completo Haiku/cyberpunk para XFCE 4.x, xfwm4, GTK2/GTK3, notificaciones, p
 
 ## Screenshots
 
-| Escritorio limpio | Decoraciones de ventana | Sin conky |
-|---|---|---|
-| ![desktop](screenshots/screenshots/haiku-xfce-desktop-1366x800.png) | ![windows](screenshots/window-decorations.png) | ![no conky](screenshots/desktop-no-conky.png) |
+Escritorio Uchikoma (Acer Aspire One) con el tema Haiku-ish-Smooth aplicado a xfwm4,
+resolución virtual 1366x800, DPI 72, cursor pequeño y fondo degradado.
+
+![Desktop Haiku/XFCE](screenshots/screenshot.png)
 
 ## Instalación
 
