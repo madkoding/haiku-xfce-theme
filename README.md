@@ -50,3 +50,9 @@ cp -r Haiku-XFCE/wallpapers/* ~/.config/wallpapers/ 2>/dev/null || true
 
 Packaging para Uchikoma (Acer Aspire One, XFCE 4.8) por madkoding.
 Tema base Haiku por B00merang Project.
+
+## Terminal
+
+Se recomienda la fuente **Kode Mono** para terminales. Incluida en `fonts/`.
+Para aplicar en lxterminal, copiar a `~/.fonts/` y setear `fontname=Kode Mono 11`
+en `~/.config/lxterminal/lxterminal.conf`.
